@@ -59,7 +59,9 @@ li a{
     font-weight: 400;
 }
 li a:hover{
-    color: rb;
+    color: rgb(220, 251, 14);
+    /* border-top: 2px solid linear-gradient(rgb(220, 251, 14), rgb(255, 255, 255));
+    border-bottom: 2px solid linear-gradient(rgb(255, 255, 255), rgb(220, 251, 14)); */
 }
 .cta{
     text-decoration: none;
@@ -100,6 +102,7 @@ li a:hover{
 }
 .top-aside{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items:flex-start;
@@ -156,4 +159,48 @@ li a:hover{
     font-size: 1.5rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid rgb(245, 246, 238);
+}
+@media (max-width:768px){
+header{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0%;
+}
+header > * {
+    margin-bottom: 2rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+li a{
+    padding: 0;
+    font-size: 0.8rem;
+}
+.cta{
+    font-size: 0.8rem;
+}
+.top-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-section h1{
+        font-size: 2rem;
+    }
+.top-aside a{
+    font-size: 0.8rem;
+}
+.top-aside h3{
+    font-size: 1rem;
+}
+.picture{
+    min-width: 70%;
+    min-height: 50%;
+}
+.bottom-aside h3{
+    font-size: 2rem;
+}
+.bottom-aside p{
+    font-size: 0.8rem;
+}
 }
